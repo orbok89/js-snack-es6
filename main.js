@@ -1,4 +1,4 @@
-let catalogo = [
+let catalogo1 = [
   bici1 = {
     nome:'fulmine',
     peso: 7
@@ -12,17 +12,39 @@ let catalogo = [
     peso: 4
   }
 ]
-let kili= catalogo[0].peso;
+let kili= catalogo1[0].peso;
 for ( let i = 0 ; i<3; i ++) {
-  if( catalogo[i].peso < kili){
-    kili = catalogo[i].peso;
-    var leggera = catalogo[i];
+  if( catalogo1[i].peso < kili){
+    kili = catalogo1[i].peso;
+    var leggera = catalogo1[i];
   }
-  else if (catalogo[i].peso = kili && i!=0){
-    leggera.push=catalogo[i]
+  else if (catalogo1[i].peso == kili && i!=0){
+    leggera.push=catalogo1[i]
   }
 }
 console.log(leggera)
+
+// bonus
+let prova = (a) => {
+     let catalogo= a;
+     
+     let kili= catalogo1[0].peso;
+    for ( let i = 0 ; i<3; i ++) {
+       
+        if( catalogo[i].peso < kili){
+          kili = catalogo[i].peso;
+          var leggera = catalogo[i];
+        }
+        else if (catalogo[i].peso == kili && i!=0){
+          leggera.push=catalogo[i]
+        }
+      }
+      
+      return leggera;
+}
+console.log(prova(catalogo1));
+
+
 
 // esercizio 2
 let squadre=[
