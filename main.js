@@ -23,6 +23,8 @@ for ( let i = 0 ; i<3; i ++) {
   }
 }
 console.log(leggera)
+let {nome , peso} = leggera;
+console.log(`nome: ${nome}, peso: ${peso}`);
 
 // bonus
 let prova = (a) => {
