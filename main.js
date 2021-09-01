@@ -78,3 +78,39 @@ for (let i = 0; i <squadre.length; i++ ){
 
 console.log(squadre); 
 console.log(nuovo);
+
+// esercizio 3
+
+
+let wet= () =>{
+    let array= [];
+    for (let i = 0; i < 10 ;i++){
+         array.push(Math.floor(Math.random() * 100));
+    }
+    return array;
+}
+
+vet = wet();
+console.log(vet);
+let a = 0;
+let b = 0;
+do {
+    a =  Math.floor(Math.random() * 100);
+    b =  Math.floor(Math.random() * 100);
+} while ( a > b);
+console.log( a , b);
+
+function centro(vettore, a, b){
+    let corto =[];
+
+    corto =  vettore.filter((numero) =>{
+        if (numero<b && numero >a){
+            return true;
+        }
+        return false;
+
+    } )
+    return corto;
+}
+console.log(centro(vet,a,b));
+ 
